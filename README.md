@@ -1,4 +1,4 @@
-![download](https://github.com/user-attachments/assets/17d66d73-ddaf-4ec6-acd3-7f7593ef5dd0)NAME:Pallabi Ghosh
+NAME:Pallabi Ghosh
 COMPANY:CODTECH IT SOLUTIONS
 ID:CT08DS8204
 DOMAIN:Data Analytics
@@ -51,4 +51,11 @@ The Titanic dataset is loaded using Seaborn’s built-in library. This dataset i
 
  
   <img width="805" alt="Screenshot 2024-09-17 160157" src="https://github.com/user-attachments/assets/974afe1b-d691-4fa3-bf74-328258229a76">
+  <img width="731" alt="image" src="https://github.com/user-attachments/assets/1d147d20-a2e5-4093-9201-a773d4e922fe">
+  <img width="604" alt="image" src="https://github.com/user-attachments/assets/0498d11f-2646-43b7-9358-993790753afb">
+  <img width="619" alt="image" src="https://github.com/user-attachments/assets/d9bfc051-a976-4652-838c-8a0abc2d3361">
+  <img width="616" alt="image" src="https://github.com/user-attachments/assets/9bed2ab8-42c4-47b4-ba10-10629d73b68d">
+
+
+
 
