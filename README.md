@@ -1,13 +1,6 @@
 # EXPLORATORY-DATA-ANALYSIS
 This repository contains an Exploratory Data Analysis (EDA) on the Titanic dataset, using Python libraries like Pandas, NumPy, Seaborn, and Matplotlib. The code explores various aspects of the dataset, including univariate, bivariate, and multivariate analysis.
 Here’s a detailed template for the **README.md** file for your GitHub repository:
-
----
-
-# Exploratory Data Analysis (EDA) on Titanic Dataset
-
-This repository contains a Python-based exploratory data analysis (EDA) of the Titanic dataset. The project uses libraries such as **Pandas**, **NumPy**, **Seaborn**, and **Matplotlib** to perform various statistical analyses and visualizations to gain insights into the data.
-
 ## Project Overview
 
 This project aims to explore the characteristics, relationships, and patterns within the Titanic dataset through the following types of analysis:
