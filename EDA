@@ -1,0 +1,72 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Set the aesthetic style for seaborn
+sns.set(style="whitegrid")
+# Load Titanic dataset
+df = sns.load_dataset('titanic')
+
+# Display the first few rows
+df.head()
+# Checking for missing values
+df.info()
+
+# Descriptive statistics of numerical columns
+df.describe()
+
+# Checking the shape of the dataset
+df.shape
+# Check the number of missing values in each column
+missing_data = df.isnull().sum()
+print(missing_data)
+
+# For simplicity, we'll drop rows with missing values
+df_cleaned = df.dropna()
+
+# Alternatively, you can fill missing values:
+# df['Age'].fillna(df['Age'].mean(), inplace=True)
+print(df.columns)
+# Corrected version if the column is lowercase
+sns.histplot(df['age'].dropna(), bins=30, kde=True)
+df['age'] = pd.to_numeric(df['age'], errors='coerce')
+# First, check the columns and handle missing values
+print(df.columns)  # Make sure 'age' and 'fare' columns exist
+
+# Drop rows where 'age' or 'fare' is missing
+df_cleaned = df.dropna(subset=['age', 'fare'])
+
+# Now, create the scatter plot
+plt.figure(figsize=(8, 6))
+sns.scatterplot(x='age', y='fare', data=df_cleaned)
+plt.title('Age vs Fare')
+plt.show()
+# Select only numeric columns for correlation
+numeric_cols = df_cleaned.select_dtypes(include=[np.number])
+
+# Generate the correlation matrix
+correlation_matrix = numeric_cols.corr()
+
+# Heatmap of the correlation matrix
+plt.figure(figsize=(10, 8))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', linewidths=0.5)
+plt.title('Correlation Heatmap')
+plt.show()
+# Check if 'pclass' exists
+print(df.columns)
+
+# Countplot for Passenger Class
+plt.figure(figsize=(8, 6))
+sns.countplot(x='pclass', data=df)
+plt.title('Passenger Class Distribution')
+plt.show()
+# Check for the existence of 'pclass' and 'survived'
+print(df.columns)
+
+# Bar plot for Survival Rate by Passenger Class
+plt.figure(figsize=(8, 6))
+sns.barplot(x='pclass', y='survived', data=df)
+plt.title('Survival Rate by Passenger Class')
+plt.show()
+
