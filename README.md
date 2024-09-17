@@ -1,3 +1,11 @@
+NAME:Pallabi Ghosh
+COMPANY:CODTECH IT SOLUTIONS
+ID:CT08DS8204
+DOMAIN:Data Analytics
+DURATION:September-October 2024
+
+--------------                         --------------------                    ------------------                 --------------------                   --------------------
+
 # EXPLORATORY-DATA-ANALYSIS
 This repository contains an Exploratory Data Analysis (EDA) on the Titanic dataset, using Python libraries like Pandas, NumPy, Seaborn, and Matplotlib. The code explores various aspects of the dataset, including univariate, bivariate, and multivariate analysis.
 Here’s a detailed template for the **README.md** file for your GitHub repository:
